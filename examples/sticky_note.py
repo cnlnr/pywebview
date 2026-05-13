@@ -104,7 +104,6 @@ html_content = """
             flex-direction: column;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
         #drag-bar {
             height: 30px; 
@@ -157,7 +156,7 @@ if __name__ == '__main__':
         transparent=True,
         js_api=engine,
         width=300,
-        height=200
+        height=210
     )
     threading.Thread(target=engine.detach_logic,
                      args=(window,), daemon=True).start()
